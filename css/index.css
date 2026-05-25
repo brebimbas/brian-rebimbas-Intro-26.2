@@ -48,8 +48,9 @@ h4 {
     display: block;
 }
 
-#Content {
+#Connect {
     display: flex;
+    gap: 20px;
 }
 
 .social {
