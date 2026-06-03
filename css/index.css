@@ -1,0 +1,150 @@
+body {
+    margin-top: 30px;
+    background: #FFF5EE;
+    color: #3A3A3A;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+}
+
+section {
+    color:#3F3530;
+    padding: 10px;
+    margin: 5px;
+}
+
+h1 {
+    color: #6B4E44;
+    font-family: "Montserrat", sans-serif;
+    font-size: 52px;
+    text-align: center;
+    font-weight: 700;
+    margin: 5px;
+}
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 38px;
+    font-weight: 400;
+    margin: 0;
+}
+
+h3 {
+    color: #6B4E44;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 5px;
+}
+
+h4 {
+    color: #6B4E44;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0px;
+}
+
+#Experience {
+    display: block;
+}
+
+#Connect {
+    display: flex;
+    gap: 20px;
+}
+
+#Skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+}
+
+#Skills li {
+  flex: 0 0 auto;
+  display: flex;
+  min-width: 100px;
+  min-height: 50px; 
+  align-items: center;
+  justify-content: center;
+  background: #FFF5EE;
+  color: #3A3A3A;
+  border: 2px solid #6B4E44;
+  border-left-width: 30px;   
+  border-radius: 10px;
+  box-shadow: 2px 4px 8px rgba(63, 53, 48, 0.25); 
+}
+
+.social {
+    color: #6B4E44;
+    font-size: 50px;
+    margin: 0 20px 0 0;
+    text-decoration: none;
+}
+
+.social:hover,
+.social:focus {
+    color: #3F3530;
+}
+
+.JobHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.JobTitle {
+    margin: 5px 0 0 15px;
+    color: #3A3A3A;
+}
+
+.JobDate {
+    font-style: italic;
+    color: #6B4E44;
+    margin-right: 25px;
+}
+
+.JobPosition {
+    margin: 0 0 10px 25px;
+    font-weight: 200;
+    color: #3A3A3A;
+}
+
+.JobDetails ul {
+    padding-left: 60px;
+    margin: 0;
+    list-style-type: square;
+}
+
+.JobDetails li {
+    margin-bottom: 8px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #FCF6F2;
+    z-index: 1000;
+}
+
+nav {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 5px 0;
+}
+
+nav a {
+    font-family: "Montserrat", sans-serif;
+    color: #6B4E44;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #3F3530;
+    text-decoration: underline;
+}
