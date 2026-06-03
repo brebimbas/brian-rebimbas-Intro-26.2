@@ -9,11 +9,11 @@ class App {
     const today = new Date();
     const thisYear = today.getFullYear();
 
-    document.querySelector("footer");
+    const footerElement = document.querySelector("footer"); //Used because assignment required but not really needed i could of just use inital const footer
     const copyright = document.createElement("p");
     copyright.innerHTML = `\u00A9 ${thisYear} Brian Rebimbas`;
 
-    footer.appendChild(copyright);
+    footerElement.appendChild(copyright);
 
     const skills = [
       "Powershell",
@@ -23,7 +23,7 @@ class App {
       "CSS",
       "GitHub",
     ];
-    const skillsSection = document.querySelector("#Skills");
+    const skillsSection = document.querySelector("#skills");
     const skillsList = skillsSection.querySelector("ul");
 
     for (let i = 0; i < skills.length; i++) {
