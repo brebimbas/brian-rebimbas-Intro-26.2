@@ -148,3 +148,100 @@ nav a:focus {
     color: #3F3530;
     text-decoration: underline;
 }
+
+#leave_message {
+  max-width: 700px;
+  margin: 0 5px 40px 5px;
+  padding: 10px;
+}
+
+#leave_message h2 {
+  text-align: left;
+  margin: 0 0 10px 0;
+}
+
+#leave_message form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+#leave_message label {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #3F3530;
+}
+
+#leave_message input,
+#leave_message textarea {
+  font-family: "Open Sans", sans-serif;
+  padding: 8px 10px;
+  border: 2px solid #6B4E44;
+  border-radius: 8px;
+  background: #FFF5EE;
+  color: #3A3A3A;
+}
+
+#leave_message button {
+  align-self: flex-start;
+  padding: 10px 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #FFF5EE;
+  background: #6B4E44;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+#leave_message button:hover {
+  background: #3F3530;
+}
+
+#messages {
+  max-width: 700px;
+  margin: 0 5px 40px 5px;
+  padding: 10px;
+  display: none;
+}
+
+#messages h2 {
+  text-align: left;
+  margin: 0 0 10px 0;
+}
+
+#messages ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#messages li {
+  padding: 12px;
+  background: #FFF5EE;
+  border: 2px solid #6B4E44;
+  border-radius: 10px;
+  box-shadow: 2px 4px 8px rgba(63, 53, 48, 0.25);
+  font-family: "Open Sans", sans-serif;
+  color: #3A3A3A;
+}
+
+#messages li button {
+  margin-left: 10px;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  background: #c0392b;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#messages li button:hover {
+  background: #a93226;
+}
+
+html {
+  scroll-padding-top: 35px;
+}
