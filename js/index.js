@@ -90,14 +90,15 @@ document.addEventListener("DOMContentLoaded", () => {
       if (!response.ok) throw new Error("Request failed");
       return response.json();
     })
-    .then((data) => {
-      console.log(data);
+    .then((repositories) => {
+      console.log(repositories);
 
-      data.forEach((repo) => {
+      for (let i = 0; i < repositories.length; i++) {
+        const repo = repositories[i];
         const li = document.createElement("li");
         li.textContent = repo.name;
         projectList.appendChild(li);
-      });
+      }
     })
     .catch((error) => {
       const message = document.createElement("p");
