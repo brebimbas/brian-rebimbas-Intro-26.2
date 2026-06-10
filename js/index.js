@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
     projectSection.appendChild(projectList);
   }
 
-  fetch("https://api.github.com/users/brebimbas/repos")
+  fetch("https://api.github.com/users/brebimbas/reposgit")
     .then((response) => {
       if (!response.ok) throw new Error("Request failed");
       return response.json();
