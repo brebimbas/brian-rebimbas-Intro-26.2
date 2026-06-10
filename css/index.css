@@ -75,6 +75,15 @@ h4 {
   box-shadow: 2px 4px 8px rgba(63, 53, 48, 0.25); 
 }
 
+#Projects ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+}
+
+
+
 .social {
     color: #6B4E44;
     font-size: 50px;

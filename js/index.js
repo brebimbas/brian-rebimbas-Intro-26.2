@@ -75,3 +75,45 @@ messageForm.addEventListener("submit", (event) => {
   messageSection.style.display = "block";
   messageForm.reset();
 });
+
+async function fetchData() {
+  try {
+    const response = await fetch(
+      "https://api.github.com/users/brebimbas/repos",
+    );
+    if (!response.ok) {
+      throw new Error("Request failed");
+    }
+
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error("An error occured:", error);
+  }
+}
+document.addEventListener("DOMContentLoaded", () => {
+  const projectSection = document.getElementById("Projects");
+
+  let projectList = projectSection.querySelector("ul");
+  if (!projectList) {
+    projectList = document.createElement("ul");
+    projectSection.appendChild(projectList);
+  }
+
+  fetchData()
+    .then((repos) => {
+      for (let i = 0; i < repos.length; i++) {
+        const project = document.createElement("li"); // new <li>
+        project.innerText = repos[i].name; // repo name
+        projectList.appendChild(project); // attach to <ul>
+      }
+    })
+    .catch((error) => {
+      // 7. Friendly user feedback if something went wrong
+      const message = document.createElement("p");
+      message.innerText =
+        "Sorry, we couldn’t load the projects right now. Please try again later.";
+      projectSection.appendChild(message);
+      console.error("An error occurred:", error);
+    });
+});
