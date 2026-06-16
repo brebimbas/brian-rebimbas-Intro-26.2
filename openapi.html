@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Open API Page</title>
+    <link rel="stylesheet" href="./css/openapi.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="./index.html"><< Portfolio</a>
+        <a href="#DogInsight">Dog Insight</a>
+        <a href="#Breeds">Breeds</a>
+        <a href="#SearchBreed">Search Breed</a>
+        <a href="#BreedInformation">Breed Information</a>
+      </nav>
+    </header>
+    <section id="DogInsight">
+    <h1>Dog Insight</h1>
+    <img src="https://cdn2.thedogapi.com/images/XzvYXKK4K.jpg" alt="Image of a Dog">
+    <p>
+      Welcome to Dog Insight, the place where every breed gets its moment to
+      shine. Dive into fun facts about size, weight, lifespan, personality, and
+      all the quirky traits that make each dog unique. You can browse pictures,
+      explore new breeds, or look up your favorites to learn what they’re really
+      like. Whether you’re a future dog owner or just a dog lover at heart, this
+      is your spot to explore the wonderful world of dogs
+    </p>
+    </section>
+    <section id="Breeds">
+      <h2>Dog Breeds</h2>
+      <ul></ul>
+    </section>
+    <section id="SearchBreed">
+      <h2>Search Breed</h2>
+        <form name="searchBreed">
+        <label>Breed Name:</label>
+        <input type="text" name="BreedName" required="true" placeholder="Enter a name from the list above."/><br />
+        <button type="submit">Search</button>
+      </form>
+    </section>
+    </section>
+    <section id="BreedInformation">
+      <h2>Breed Information</h2>
+      <div id="BreedCardContainer"></div>
+    </section>
+    <script src="./js/openapi.js" type="module"></script>
+  </body>
+</html>

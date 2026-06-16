@@ -1,0 +1,200 @@
+html {
+  scroll-padding-top: 60px;
+}
+
+body {
+  margin-top: 60px;
+  background: #c1dff0;
+  color: #2d898b; 
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #88ccf1; 
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #2d848a;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #3587a4;
+  text-decoration: underline;
+}
+
+h1 {
+  text-align: center;
+  color: #2d848a;
+  font-family: "Montserrat", sans-serif;
+  font-size: 54px;
+  margin: 20px 0 10px;
+}
+
+h2 {
+  color: #2d848a;
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+h3 {
+  color: #3587a4;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 0;
+}
+
+#Breeds,
+#SearchBreed,
+#BreedInformation {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+#DogInsight p {
+  max-width: 900px;
+  margin: 0 auto 30px auto;
+  padding: 0 20px;
+  text-align: left;
+  font-size: 15px;
+}
+
+#DogInsight img {
+  display: block;
+  margin: 0 auto 30px;
+  width: min(90%, 350px);   
+  min-width: 220px;         
+  height: auto;
+  background: #ffffff8d;
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: 0 6px 20px #2D848A1F;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+#Breeds ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px 30px;
+  list-style: none;
+}
+
+#Breeds li {
+  color: #2d848a;
+  padding: 4px 0;
+  position: relative;
+  padding-left: 22px;
+}
+
+#Breeds li::before {
+  content: "🐾";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font-size: 14px;
+  color: #3587a4;
+}
+
+#SearchBreed form {
+  background: #F5F5F5;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 4px 15px #2D848A1F;
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  max-width: 700px;
+}
+
+#SearchBreed label {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+#SearchBreed input {
+  background: #F5F5F5;
+  flex: 1;
+  min-width: 250px;
+  padding: 12px;
+  border: 2px solid #88ccf1;
+  border-radius: 10px;
+  color: #2d898b;
+  font-family: inherit;
+}
+
+#SearchBreed input:focus {
+  outline: none;
+  border-color: #3587a4;
+}
+
+#SearchBreed button {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 10px;
+  background: #3587a4;
+  color: #F5F5F5;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#SearchBreed button:hover {
+  background: #2d848a;
+}
+
+#BreedInformation {
+  padding-bottom: 40px;
+}
+
+#BreedCardContainer {
+  max-width: 900px;
+}
+
+.breed-card {
+  background: #ffffff8d;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 6px 20px #2D848A1F;
+}
+
+.breed-card img {
+  display: block;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto 30px;
+  border-radius: 15px;
+    box-shadow: 0 6px 20px #2D848A1F;
+}
+
+.breed-card p {
+  margin: 10px 0;
+}
+
+#BreedCardContainer p {
+  padding: 15px;
+  display: inline-block;
+}
